@@ -1,45 +1,8 @@
-if has('vim_starting')
-   " 初回起動時のみruntimepathにneobundleのパスを指定する
-   set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-
-" NeoBundleを初期化
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-" インストールするプラグインをここに記述
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/vimfiler'
-NeoBundle 'w0ng/vim-hybrid'
-NeoBundle 'chriskempson/vim-tomorrow-theme'
-NeoBundle 'tyru/caw.vim.git'
-
-
-call neobundle#end()
-
-" ファイルタイプ別のプラグイン/インデントを有効にする
-filetype plugin indent on
-
-"行番号
-set number
-set expandtab
-set tabstop=2
-set shiftwidth=2
-
-"カラーテーマ
-syntax on
-set background=dark
-"colorscheme Tomorrow-Night
-colorscheme Tomorrow-Night-Bright
-
-
-"複数行コメントの設定
-nmap <C-K> <Plug>(caw:i:toggle)
-vmap <C-K> <Plug>(caw:i:toggle)
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/dotfiles/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -66,6 +29,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 "
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'chriskempson/vim-tomorrow-theme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -82,5 +46,14 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "
-"
+
+
+set number
+set expandtab
+set tabstop=2
+set shiftwidth=2
+syntax on
+set background=dark
+colorscheme Tomorrow-Night-Bright
+
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
