@@ -1,0 +1,52 @@
+- name: install homebrew packages
+  homebrew:
+    name:
+      - ansible
+      - git
+      - mas
+      - nkf
+      - rbenv
+      - ruby-build
+      - tree
+      - tmux
+      - caskformula/caskformula/inkscape
+      - wget
+      - nodenv
+      - yarn
+      - pyenv
+      - rbenv
+      - ruby-build
+
+- name: install vim
+  homebrew:
+    name:
+      - vim
+    install_options:
+      --with-override-system-vi
+
+- name: install homebrew cask packages
+  homebrew_cask:
+    name: "{{ item }}"
+  with_items:
+    - docker
+    - dropbox
+    - google-chrome
+    - iterm2
+    - vagrant
+    - virtualbox
+    - atom
+    - visual-studio-code
+    - xquartz
+    - font-roboto
+    - font-roboto-condensed
+    - font-roboto-mono
+    - font-roboto-slab
+    - amethyst
+    - alfred
+    - google-japanese-ime
+    # Quick Look
+    - qlcolorcode
+    - qlimagesize
+    - qlmarkdown
+    - qlstephen
+    - quicklook-json

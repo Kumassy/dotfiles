@@ -1,0 +1,16 @@
+---
+- name: Set up local mac
+  hosts: local
+  roles:
+    - homebrew
+    - geerlingguy.mas
+  vars:
+    mas_installed_apps:
+      - id: 497799835
+        name: Xcode (10.1)
+      - id: 490461369
+        name: Bandwidth+ (1.11)
+      - id: 803453959
+        name: Slack (3.3.7)
+      - id: 539883307
+        name: LINE (5.13.1)
