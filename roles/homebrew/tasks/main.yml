@@ -9,7 +9,6 @@
       - ruby-build
       - tree
       - tmux
-      - caskformula/caskformula/inkscape
       - wget
       - nodenv
       - yarn
@@ -43,6 +42,7 @@
     - font-roboto-slab
     - amethyst
     - alfred
+    - inkscape
     - google-japanese-ime
     # Quick Look
     - qlcolorcode
