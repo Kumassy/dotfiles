@@ -5,8 +5,6 @@
       - git
       - mas
       - nkf
-      - rbenv
-      - ruby-build
       - tree
       - tmux
       - wget
@@ -15,14 +13,8 @@
       - pyenv
       - rbenv
       - ruby-build
-
-- name: install vim
-  homebrew:
-    name:
       - vim
-    install_options:
-      --with-override-system-vi
-
+      
 - name: install homebrew cask packages
   homebrew_cask:
     name: "{{ item }}"
