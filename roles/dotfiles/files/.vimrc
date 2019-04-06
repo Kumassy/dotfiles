@@ -30,6 +30,9 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'airblade/vim-gitgutter'
+
+Plugin 'rust-lang/rust.vim'
 
 " Markdown
 " Plugin 'godlygeek/tabular'
