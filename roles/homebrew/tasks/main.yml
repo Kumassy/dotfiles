@@ -10,10 +10,19 @@
       - wget
       - nodenv
       - yarn
+      - python
       - pyenv
       - rbenv
       - ruby-build
       - vim
+      - fish
+      - fzf
+
+- name: install powerline-shell for fish
+  pip:
+    name:
+      - powerline-shell
+    executable: pip3
       
 - name: install homebrew cask packages
   homebrew_cask:
@@ -36,6 +45,8 @@
     - alfred
     - inkscape
     - google-japanese-ime
+    - bettertouchtool
+    - cyberduck
     # Quick Look
     - qlcolorcode
     - qlimagesize
