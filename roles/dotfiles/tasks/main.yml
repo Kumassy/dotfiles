@@ -1,0 +1,24 @@
+- name: copy vimrc
+  copy:
+    src: .vimrc
+    dest: ~/.vimrc
+
+- name: copy vim
+  copy:
+    src: .vim/
+    dest: ~/.vim
+
+- name: copy tmux.conf
+  copy:
+    src: .tmux.conf
+    dest: ~/.tmux.conf
+
+- name: .config/fish
+  copy:
+    src: .config/fish/
+    dest: ~/.config/fish
+
+- name: .config/powerline
+  copy:
+    src: .config/powerline/
+    dest: ~/.config/powerline
