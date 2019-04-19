@@ -33,6 +33,7 @@ Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'airblade/vim-gitgutter'
 
 Plugin 'rust-lang/rust.vim'
+Plugin 'racer-rust/vim-racer'
 
 " Markdown
 " Plugin 'godlygeek/tabular'

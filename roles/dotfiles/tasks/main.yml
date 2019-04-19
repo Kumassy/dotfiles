@@ -3,10 +3,10 @@
     src: .vimrc
     dest: ~/.vimrc
 
-- name: copy vim
-  copy:
-    src: .vim/
-    dest: ~/.vim
+- name: clone vundle
+  git:
+    repo: https://github.com/VundleVim/Vundle.vim.git
+    dest: ~/.vim/bundle/Vundle.vim
 
 - name: copy tmux.conf
   copy:
