@@ -21,7 +21,8 @@
 - name: install powerline-shell for fish
   pip:
     name:
-      - powerline-shell
+      # - powerline-shell
+      - powerline-status
     executable: pip3
       
 - name: install homebrew cask packages
